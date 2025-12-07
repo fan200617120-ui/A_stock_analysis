@@ -1,45 +1,18 @@
-#A股分析看板
-一个将数据可视化的A股复盘小工具
+# A股量化分析系统
 
-# A股分析看板 专业版 v1.7.8
+一个基于Streamlit的A股市场量化分析平台，提供资金流向分析、AI预测、策略回测等功能。
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.50.0-red)
-![Version](https://img.shields.io/badge/版本-v1.7.8-green)
+## 功能特性
 
-专业级A股量化分析工具，集成了数据获取、AI预测、策略回测、可视化分析和智能报告生成功能。
+- 📊 **资金流向分析**: 北向资金、主力资金实时监控
+- 🤖 **AI预测中心**: 机器学习模型预测市场走势
+- 📈 **策略回测**: 多种量化策略回测分析
+- 📰 **智能报告**: 自动生成每日市场分析报告
+- 🎯 **可视化展示**: 交互式图表和数据可视化
 
-## 📊 功能特点
+## 安装使用
 
-- 📈 **实时数据获取**：支持A股实时行情数据抓取
-- 🤖 **AI预测模型**：基于机器学习的股价走势预测
-- 📊 **技术指标分析**：内置多种技术指标和动量策略
-- 📉 **可视化图表**：交互式K线图、热力图、资金流向图
-- 📋 **智能日报生成**：自动生成交易日分析报告
-- ⚡ **高性能回测**：支持自定义策略回测与优化
-- 🎨 **现代化UI**：Streamlit构建的直观用户界面
-
-## 🚀 快速开始
-
-### 便携版使用（推荐）
-1. 下载最新版本压缩包
-2. 解压到任意目录
-3. 运行 `双击启动.bat`（Windows）
-4. 自动打开浏览器访问 `http://localhost:8501`
-
-### 开发者安装
+1. 克隆项目
 ```bash
-# 克隆项目
-git clone https://github.com/yourusername/a_stock_analysis.git
-cd a_stock_analysis
-
-# 创建虚拟环境（推荐）
-conda create -n stock_analysis python=3.8
-conda activate stock_analysis
-
-# 安装依赖
-pip install -r requirements.txt
-
-# 运行应用
-streamlit run app.py
+git clone <repository-url>
+cd a_stock_dashboard

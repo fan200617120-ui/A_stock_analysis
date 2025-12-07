@@ -1,0 +1,172 @@
+/* assets/style.css - 中国红配色版本 */
+
+/* 暗色主题变量 */
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-color: #e2e8f0;
+  --primary-color: #dc2626;
+  --secondary-color: #b91c1c;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --success-color: #dc2626;
+  --warning-color: #f59e0b;
+  --error-color: #16a34a;
+  --info-color: #3b82f6;
+  --accent-color: #ef4444;
+  --muted-color: #64748b;
+  --gradient-start: #dc2626;
+  --gradient-end: #b91c1c;
+  --up-red: #dc2626;
+  --down-green: #16a34a;
+}
+
+/* 亮色主题变量 */
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #1e293b;
+  --primary-color: #dc2626;
+  --secondary-color: #b91c1c;
+  --card-bg: #f8fafc;
+  --border-color: #e2e8f0;
+  --success-color: #dc2626;
+  --warning-color: #d97706;
+  --error-color: #15803d;
+  --info-color: #2563eb;
+  --accent-color: #ef4444;
+  --muted-color: #64748b;
+  --gradient-start: #dc2626;
+  --gradient-end: #b91c1c;
+  --up-red: #dc2626;
+  --down-green: #15803d;
+}
+
+/* 应用主题变量 */
+.stApp {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* 中国红渐变背景标题 */
+.gradient-header {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* 现代化卡片样式 */
+.modern-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.modern-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.1), 0 4px 6px -2px rgba(220, 38, 38, 0.05);
+    transform: translateY(-2px);
+}
+
+/* 指标卡片样式 */
+.metric-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.15);
+}
+
+/* 中国红按钮样式 */
+.stButton button {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+/* 标签页样式 */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    color: white;
+}
+
+/* 上涨红色样式 */
+.up-red {
+    color: var(--up-red) !important;
+}
+
+/* 下跌绿色样式 */
+.down-green {
+    color: var(--down-green) !important;
+}
+
+/* 数据表格样式 */
+.stDataFrame {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.dataframe {
+    border-radius: 12px !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .modern-card {
+        padding: 1rem;
+        margin: 0.25rem 0;
+    }
+    
+    .metric-card {
+        padding: 0.75rem;
+    }
+}
+
+/* 中国红滚动条 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}

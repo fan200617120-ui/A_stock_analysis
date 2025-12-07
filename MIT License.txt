@@ -1,0 +1,20 @@
+
+---
+
+## 🎨 assets/style.css（暗色主题样式）
+
+```css
+/* 全局 Streamlit 暗色主题增强 */
+[data-testid="stAppViewContainer"] {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+[data-testid="stSidebar"] {
+    background-color: #111827;
+}
+h1, h2, h3 {
+    color: #06b6d4;
+}
+.block-container {
+    padding-top: 1rem;
+}

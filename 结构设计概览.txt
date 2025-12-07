@@ -1,0 +1,17 @@
+
+
+a_stock_analysis/  ├── conda_env
+                            ├── app.py                    # 主入口程序（Streamlit）
+                            │
+                            ├── modules/                  # 功能模块目录
+                            │   ├── data_processing.py    # 数据加载与清洗
+                            │   ├── ai_prediction.py      # AI预测模型
+                            │   ├── strategy.py           # 策略回测与动量分析
+                            │   ├── visualization.py      # 图表绘制模块
+                            │   └── report.py             # 智能日报生成
+                            │   └── data_entry.py
+                            ├── assets/
+                            │   └── style.css             # 全局CSS主题
+                            │
+                            ├── requirements.txt
+                            └── README.md
