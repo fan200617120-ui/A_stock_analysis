@@ -1,6 +1,6 @@
 # A股量化分析系统
 
-一个基于Streamlit的A股市场量化分析平台，提供资金流向分析、AI预测、策略回测等功能。
+一个基于Streamlit的A股市场分析小工具，提供资金流向分析、AI预测、策略回测等功能。
 
 ## 功能特性
 
@@ -15,4 +15,5 @@
 1. 克隆项目
 ```bash
 git clone <repository-url>
+
 cd a_stock_dashboard
